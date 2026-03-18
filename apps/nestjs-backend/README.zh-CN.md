@@ -30,8 +30,8 @@
 
 ---
 
-## 第一部分：NestJS 项目介绍
 <a id="intro"></a>
+## 第一部分：NestJS 项目介绍
 
 关键词：**Monorepo · 全栈 · Web3 · 实时分析 · Token API**
 
@@ -56,8 +56,8 @@
 
 ---
 
-## 第二部分：技术栈
 <a id="technology"></a>
+## 第二部分：技术栈
 
 | 层级      | 技术                          | 说明                           |
 | ------- | --------------------------- | ---------------------------- |
@@ -71,8 +71,8 @@
 
 ---
 
-## 第三部分：核心功能
 <a id="function"></a>
+## 第三部分：核心功能
 
 ### 1. 数据采集与聚合
 
@@ -177,8 +177,8 @@
 
 ---
 
-## 第四部分：后端任务流水线（Backend Task Pipeline）
 <a id="pipeline"></a>
+## 第四部分：后端任务流水线（Backend Task Pipeline）
 
 后端采用基于任务驱动的流水线机制，对 Token 数据进行获取、处理与缓存：
 
@@ -224,8 +224,8 @@
 
 ---
 
-## 第五部分：Token 评分模块
 <a id="scoring"></a>
+## 第五部分：Token 评分模块
 
 Token 评分模块（Token Scoring Engine）属于系统核心业务逻辑层（Domain Layer），
 负责对链上 Token 进行多维度评估，生成综合评分（Token Score），
@@ -324,8 +324,8 @@ apps/nestjs-backend/src/utils/sort/uniform-data/sort-hot_rule_github.ts
 
 ---
 
-## 第六部分：仓库结构
 <a id="structure"></a>
+## 第六部分：仓库结构
 
 ### 一、仓库结构总览
 
@@ -388,8 +388,8 @@ nestjs-backend/
 ```
 ---
 
-## 第七部分：申请第三方 API Key
 <a id="apikey"></a>
+## 第七部分：申请第三方 API Key
 
 ### 1. Solscan
 
@@ -429,8 +429,9 @@ nestjs-backend/
 * 付费 API 为可选项
 
 ---
-## 第八部分：修改 .env 文件名
+
 <a id="envname"></a>
+## 第八部分：修改 .env 文件名
 
 修改以下 .env 文件名：
 
@@ -452,8 +453,8 @@ apps/nestjs-backend/.env copy.production
 
 ---
 
-## 第九部分：配置 .env 环境变量
 <a id="envset"></a>
+## 第九部分：配置 .env 环境变量
 
 > 注：本项目涉及以下工具：
 >
@@ -533,8 +534,8 @@ apps/nestjs-backend/src/utils/api/platform-data/api-sol_trans.ts
 
 ---
 
-## 第十部分：Redis 的安装与配置
 <a id="redis"></a>
+## 第十部分：Redis 的安装与配置
 
 **（示例：Windows 系统，Linux / 服务器环境请自行调整）**
 
@@ -672,8 +673,8 @@ netstat -ano | findstr 31964
 ```
 ---
 
-## 第十一部分：启动项目（Quick Start）
 <a id="start"></a>
+## 第十一部分：启动项目（Quick Start）
 
 ### 一：前置检查工作
 

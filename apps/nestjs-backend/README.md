@@ -32,9 +32,8 @@ After completing the above steps, proceed to:
 
 ---
 
-## Part 1: NestJS Project Introduction
-
 <a id="intro"></a>
+## Part 1: NestJS Project Introduction
 
 Keywords: **Monorepo · Full-stack · Web3 · Real-time Analysis · Token API**
 
@@ -59,9 +58,8 @@ and building high-performance ranking APIs based on Redis for consumption by a N
 
 ---
 
-## Part 2: Technology Stack
-
 <a id="technology"></a>
+## Part 2: Technology Stack
 
 | Layer         | Technology                     | Description                                                  |
 | ------------- | ------------------------------ | ------------------------------------------------------------ |
@@ -75,9 +73,8 @@ and building high-performance ranking APIs based on Redis for consumption by a N
 
 ---
 
-## Part 3: Core Features
-
 <a id="function"></a>
+## Part 3: Core Features
 
 ### 1. Data Collection & Aggregation
 
@@ -184,9 +181,8 @@ export type TChainQtKey = `${TChainName}_${TQtType}`;
 
 ---
 
-## Part 4: Backend Task Pipeline
-
 <a id="pipeline"></a>
+## Part 4: Backend Task Pipeline
 
 The backend uses a task-driven pipeline to fetch, process, and cache token data:
 
@@ -235,9 +231,8 @@ The backend uses a task-driven pipeline to fetch, process, and cache token data:
 
 ---
 
-## Part 5: Token Scoring Module
-
 <a id="scoring"></a>
+## Part 5: Token Scoring Module
 
 The Token Scoring Engine belongs to the **core domain layer** of the system.
 It evaluates tokens across multiple dimensions and generates a **Token Score**,
@@ -346,9 +341,8 @@ ensuring real-time accuracy and relevance.
 
 ---
 
-## Part 6: Repository Structure
-
 <a id="structure"></a>
+## Part 6: Repository Structure
 
 ### 1. Overview
 
@@ -413,9 +407,8 @@ nestjs-backend/
 
 ---
 
-## Part 7: Apply for Third-Party API Keys
-
 <a id="apikey"></a>
+## Part 7: Apply for Third-Party API Keys
 
 ### 1. Solscan
 
@@ -456,9 +449,8 @@ nestjs-backend/
 
 ---
 
-## Part 8: Rename the `.env` File
-
 <a id="envname"></a>
+## Part 8: Rename the `.env` File
 
 Rename the following files:
 
@@ -480,9 +472,8 @@ apps/nestjs-backend/.env copy.production
 
 ---
 
-## Part 9: Configure `.env` Environment Variables
-
 <a id="envset"></a>
+## Part 9: Configure `.env` Environment Variables
 
 > This project involves:
 >
@@ -573,9 +564,8 @@ Core methods:
 
 ---
 
-## Part 10: Redis Installation & Configuration
-
 <a id="redis"></a>
+## Part 10: Redis Installation & Configuration
 
 **(Example: Windows environment. Adjust accordingly for Linux / servers)**
 
@@ -713,9 +703,8 @@ netstat -ano | findstr 31964
 
 ---
 
-## Part 11: Start the Project (Quick Start)
-
 <a id="start"></a>
+## Part 11: Start the Project (Quick Start)
 
 ### 1. Prerequisites
 
