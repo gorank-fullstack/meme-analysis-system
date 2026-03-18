@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "declaration": true,
+        "module": "CommonJS",
+        "target": "ES2020",
+        "moduleResolution": "Node",
+        "strict": true  //"strict": true 是 TypeScript 编译器（tsc）中最重要的一个配置选项之一，它的意思是：开启所有严格类型检查的子选项
+    },
+    // 在 "include" 中明确写了能被引入的多个子模块："platform-data/**/*","platform-safe/**/*","uniform-data/**/*",
+    // 后，保持每个子模块，都有:index.ts文件，就可以被外部引入：
+    // 例如：platform-data/index.ts，这些可以被外部引入：import { xxx } from '@gr/interface-api/platform-data'
+    // 为了让外部模块可以引用子模块，interface-api/package.json　文件，就可以不用指定 "main"，或者保留为默认入口（非必须）
+    "include": [
+        // "src"
+        // 根据你的实际目录结构调整
+        "platform-data/**/*",
+        "platform-safe/**/*",
+        "uniform-data/**/*",
+        // "index.ts" // 如果有入口文件
+    ],
+    // "exclude": ["dist"]
+    "exclude": ["dist", "node_modules"]
+}

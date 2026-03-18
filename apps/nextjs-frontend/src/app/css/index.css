@@ -1,0 +1,75 @@
+/* 调试信息 */
+.print-info-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 10px;
+
+    /* padding: 0 24px; */
+    /* padding: 0 16px 0 16px; */
+    padding: 8px 24px 8px 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+/* 币种列表 */
+.list-container{
+    flex:1;
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    /* grid-auto-flow: row; */
+    /* flex: 1; */
+    /* height: 60px; */
+    /* padding: 0 4px 0 4px; */
+    /* padding: 0 24px; */
+    /* padding: 0 16px 0 16px; */
+    padding: 8px 24px 8px 24px;
+    
+    /* border-radius: 8px;
+    background-color: rgba(255,255,255,0.03); */
+    
+    /* border: 1px solid; */
+    
+    align-items: center;
+    position: relative;
+
+    box-sizing: border-box;
+    position: relative;
+}
+
+.list-container .list-main{
+    /* border: 1px solid; */
+     width: 100%;
+     white-space: nowrap;/* 让文本不换行 */
+     border-radius: 8px;
+    background-color: rgba(255,255,255,0.03);
+     /* 
+如果你希望让 <table> 的宽度超过父容器 div 的宽度，并且在超出部分进行裁剪（不显示超出部分），
+可以使用 CSS 的 overflow 属性来控制。具体做法是将父容器 div 设置为具有固定宽度，
+并应用 overflow: hidden;，这样表格超出的部分将被裁剪掉。 */
+     overflow: hidden;
+    /*position: relative; */
+}
+
+/* .list-container .list-right{
+    border: 1px solid;
+    width:120px;
+} */
+
+/* position: sticky 的作用
+在 CSS 中，position: sticky 是一种结合了 相对定位（relative） 和 固定定位（fixed） 特性的定位方式。
+元素会在其父容器的滚动范围内表现为相对定位，当满足某些条件时，会变为固定定位。 */
+.list-main .last-column{
+    /* width: 100px; */
+    position: sticky; 
+    /* right: 16px;    */ 
+    right: 0px;   
+    z-index: 2;
+    /* padding: 2px 2px 2px 2px; */ /* 内容和边缘之间的空间 */
+    /* background-clip: content-box; */
+    backdrop-filter: blur(16px);
+    /* 自动继承前一列的背景色 */
+    /* background: "inherit"; */
+    /* background-color: oklch(var(--b1)); */
+}

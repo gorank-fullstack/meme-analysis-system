@@ -1,0 +1,10 @@
+{
+    "header": {
+        "new": "新币",
+        "hot": "热门",
+        "wallet_tracking": "钱包跟踪",
+        "holding": "持仓",
+        "follow": "关注",
+        "setting": "设置"
+    }
+}

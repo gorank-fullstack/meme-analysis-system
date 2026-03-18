@@ -1,0 +1,184 @@
+{
+  "posts": [
+    {
+      "id": "8lezk19r",
+      "name": "LLM",
+      "symbol": "Large La",
+      "ca": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/solana/98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump.png?claimId=Gyk-h0FTyr1V6KXL",
+      "time": "1d",
+      "pool": "3.9M",
+      "marketValue": "113.6M",
+      "tokenRank": "6",
+      "holders": "26537",
+      "smartMoney": "77",
+      "total": "1000M",
+      "kols": "52",
+      "tokenCreator": "EeLjBXRELqrcWAXbnj8T4jQPS9Qh7UGWiKxovsJ36pZY",
+      "pool_0": {
+        "assetA_liq": "3.9M",
+        "assetA_initial": "0",
+        "assetB_name": "SOL",
+        "assetB_address": " ",
+        "assetB_liq": "7,098.95",
+        "assetB_initial": "0",
+        "poolCreateTime": "01/08/2025 18:51"
+      },
+      "pool_1": {
+        "assetA_liq": " ",
+        "assetA_initial": " ",
+        "assetB_name": " ",
+        "assetB_address": " ",
+        "assetB_liq": " ",
+        "assetB_initial": " ",
+        "poolCreateTime": " "
+      },
+      "media": {
+        "twitterUrl": "https://x.com/ai160kg",
+        "twitterId": " ",
+        "telegram": "https://t.me/largelanguagemodelsolchannel",
+        "webSite": "https://linktr.ee/largelanguagemodel"
+      },
+      "trx": {
+        "quantity": "85200",
+        "amount": "2.8M"
+      },
+      "price": "0.1208249",
+      "audit": {
+        "mintDiscard": "1",
+        "blackList": "0",
+        "lpBurnt": "100%"
+      },
+      "degen": {
+        "insiders": "0",
+        "top10": "9.13%"
+      },
+      "dev": {
+        "notSold": "1",
+        "sellAll": "0",
+        "burnt": "0",
+        "add": "0"
+      }
+    },
+    {
+      "id": "dda1bqin",
+      "name": "BLOXAI",
+      "symbol": "Blox AI",
+      "ca": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/solana/7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump.png?size=lg&key=27d2e4",
+      "time": "48m",
+      "pool": "30.62",
+      "marketValue": "138.4K",
+      "tokenRank": "3",
+      "holders": "823",
+      "smartMoney": "4",
+      "total": "1000M",
+      "kols": "2",
+      "tokenCreator": "JCwcLfBNimwbypg5xiL4NnEFFny6NiDfDZUa9jiLXrFr",
+      "pool_0": {
+        "assetA_liq": "177.3M",
+        "assetA_initial": "206.9M",
+        "assetB_name": "SOL",
+        "assetB_address": "--",
+        "assetB_liq": "119.5",
+        "assetB_initial": "79.01",
+        "poolCreateTime": "01/08/2025 16:56"
+      },
+      "pool_1": {
+        "assetA_liq": " ",
+        "assetA_initial": " ",
+        "assetB_name": " ",
+        "assetB_address": " ",
+        "assetB_liq": " ",
+        "assetB_initial": " ",
+        "poolCreateTime": " "
+      },
+      "media": {
+        "twitterUrl": "https://x.com/agent_blox",
+        "twitterId": "--",
+        "telegram": "https://t.me/agent_blox",
+        "webSite": "https://agentblox.xyz/"
+      },
+      "trx": {
+        "quantity": "1888",
+        "amount": "1.9M"
+      },
+      "price": "0.0001368",
+      "audit": {
+        "mintDiscard": "1",
+        "blackList": "0",
+        "lpBurnt": "100%"
+      },
+      "degen": {
+        "insiders": "0.05%",
+        "top10": "19.15%"
+      },
+      "dev": {
+        "notSold": "0",
+        "sellAll": "1",
+        "burnt": "0",
+        "add": "0"
+      }
+    },
+    {
+      "id": "n8kqkp5p",
+      "name": "COOK",
+      "symbol": "COOK AI",
+      "ca": "27dSGHGQbLEGSA7tiHyMCJqLW2RWoDTkmh7QJPAEpump",
+      "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/solana/27dSGHGQbLEGSA7tiHyMCJqLW2RWoDTkmh7QJPAEpump.png?size=lg&key=f03a41",
+      "time": "12h",
+      "pool": "127.6",
+      "marketValue": "155K",
+      "tokenRank": "4",
+      "holders": "1087",
+      "smartMoney": "4",
+      "total": "999.7M",
+      "kols": "2",
+      "tokenCreator": "CyKh2sED4Tv2SsDr2xZcxYrGDMnncEHn7EeFP78HggoX",
+      "pool_0": {
+        "assetA_liq": "100.3M",
+        "assetA_initial": "206.9M",
+        "assetB_name": "SOL",
+        "assetB_address": "--",
+        "assetB_liq": "220.48",
+        "assetB_initial": "79.01",
+        "poolCreateTime": " "
+      },
+      "pool_1": {
+        "assetA_liq": " ",
+        "assetA_initial": " ",
+        "assetB_name": " ",
+        "assetB_address": " ",
+        "assetB_liq": " ",
+        "assetB_initial": " ",
+        "poolCreateTime": " "
+      },
+      "media": {
+        "twitterUrl": "https://x.com/cookaifun",
+        "twitterId": "--",
+        "telegram": "https://t.me/cookai_portal",
+        "webSite": "https://www.cookai.fun/"
+      },
+      "trx": {
+        "quantity": " ",
+        "amount": "3M"
+      },
+      "price": "0.0003644",
+      "audit": {
+        "mintDiscard": "1",
+        "blackList": "0",
+        "lpBurnt": "100%"
+      },
+      "degen": {
+        "insiders": "2.5%",
+        "top10": "26.78%"
+      },
+      "dev": {
+        "notSold": "1",
+        "sellAll": "0",
+        "burnt": "2M",
+        "add": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@gr/interface-api",
+  "version": "1.0.2",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@gr/interface-base": "workspace:*"
+  }
+}

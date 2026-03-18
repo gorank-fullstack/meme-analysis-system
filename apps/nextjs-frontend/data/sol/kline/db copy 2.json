@@ -1,0 +1,211 @@
+{
+  "posts": [
+    {
+      "id": "9mo101hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-19",
+      "open": 46,
+      "high": 56,
+      "low": 39,
+      "close": 52
+    },
+    {
+      "id": "9mo102hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-18",
+      "open": 41,
+      "high": 52,
+      "low": 31,
+      "close": 46
+    },
+    {
+      "id": "9mo103hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-17",
+      "open": 32,
+      "high": 42,
+      "low": 28,
+      "close": 41
+    },
+    {
+      "id": "9mo104hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-16",
+      "open": 25,
+      "high": 35,
+      "low": 24,
+      "close": 32
+    },
+    {
+      "id": "9mo105hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-15",
+      "open": 21,
+      "high": 32,
+      "low": 19,
+      "close": 25
+    },
+    {
+      "id": "9mo106hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-14",
+      "open": 16,
+      "high": 26,
+      "low": 14,
+      "close": 21
+    },
+    {
+      "id": "9mo107hmn",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-13",
+      "open": 20,
+      "high": 22,
+      "low": 15,
+      "close": 16
+    },
+    {
+      "id": "4zunngyy",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-12",
+      "open": 26,
+      "high": 28,
+      "low": 19,
+      "close": 20
+    },
+    {
+      "id": "hu0rfpos",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-11",
+      "open": 34,
+      "high": 36,
+      "low": 28,
+      "close": 26
+    },
+    {
+      "id": "mm9e0s9a",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-10",
+      "open": 28,
+      "high": 36,
+      "low": 26,
+      "close": 34
+    },
+    {
+      "id": "wunaq60z",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-09",
+      "open": 24,
+      "high": 32,
+      "low": 22,
+      "close": 28
+    },
+    {
+      "id": "imp132vl",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-08",
+      "open": 18,
+      "high": 26,
+      "low": 16,
+      "close": 24
+    },
+    {
+      "id": "gput9u79",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-07",
+      "open": 15,
+      "high": 22,
+      "low": 12,
+      "close": 18
+    },
+    {
+      "id": "wyxad237",
+      "address": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump",
+      "time": "2023-05-06",
+      "open": 10,
+      "high": 20,
+      "low": 8,
+      "close": 15
+    },
+    {
+      "id": "wy22d237",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-28",
+      "open": 279,
+      "high": 312,
+      "low": 245,
+      "close": 303
+    },
+    {
+      "id": "gp339u79",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-27",
+      "open": 226,
+      "high": 289,
+      "low": 216,
+      "close": 279
+    },
+    {
+      "id": "im4432vl",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-26",
+      "open": 185,
+      "high": 256,
+      "low": 175,
+      "close": 226
+    },
+    {
+      "id": "w55aq60z",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-25",
+      "open": 165,
+      "high": 205,
+      "low": 145,
+      "close": 185
+    },
+    {
+      "id": "mm660s9a",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-24",
+      "open": 155,
+      "high": 225,
+      "low": 135,
+      "close": 165
+    },
+    {
+      "id": "hu077pos",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-23",
+      "open": 140,
+      "high": 180,
+      "low": 110,
+      "close": 155
+    },
+    {
+      "id": "4zu88gyy",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-22",
+      "open": 120,
+      "high": 160,
+      "low": 100,
+      "close": 140
+    },
+    {
+      "id": "9m992hmn",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-21",
+      "open": 110,
+      "high": 130,
+      "low": 80,
+      "close": 120
+    },
+    {
+      "id": "4zu10gyy",
+      "address": "7g4iJa5MVYidYBXK7jQwN1yaxrWSgeUMvnccHQURpump",
+      "time": "2024-08-20",
+      "open": 100,
+      "high": 120,
+      "low": 80,
+      "close": 110
+    }
+  ]
+}

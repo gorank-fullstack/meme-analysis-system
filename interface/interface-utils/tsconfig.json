@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "declaration": true,
+        "module": "CommonJS",
+        "target": "ES2020",
+        "moduleResolution": "Node"
+    },
+    "include": [
+        // "src"
+        // 根据你的实际目录结构调整
+        "src/**/*",
+        "lib/**/*",
+        "index.ts" // 如果有入口文件
+    ],
+    "exclude": ["dist"]
+}

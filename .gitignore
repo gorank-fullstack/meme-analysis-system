@@ -1,0 +1,41 @@
+# ========================
+# Root
+# ========================
+
+不上传目录/
+node_modules/
+.pnpm-store
+*.log
+
+# ========================
+# interface
+# ========================
+interface/不上传目录/
+
+# ========================
+# NestJS backend
+# ========================
+
+apps/nestjs-backend/node_modules/
+apps/nestjs-backend/dist/
+apps/nestjs-backend/.env.development
+apps/nestjs-backend/.env.production
+
+apps/nestjs-backend/不上传目录/
+apps/nestjs-backend/nestJs_stop_code/
+
+# private scoring algorithm
+apps/nestjs-backend/src/utils/sort/uniform-data/sort-hot_rule.ts
+apps/nestjs-backend/src/utils/sort/uniform-data/sort-hot_rank.ts
+
+# ========================
+# Next.js frontend
+# ========================
+
+apps/nextjs-frontend/node_modules/
+apps/nextjs-frontend/.next/
+apps/nextjs-frontend/.env.development.local
+apps/nextjs-frontend/.env.production.local
+
+apps/nextjs-frontend/不上传目录/
+apps/nextjs-frontend/nextjs_stop_code/

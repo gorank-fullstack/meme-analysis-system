@@ -1,0 +1,12 @@
+export type TPlatformType = "pump" | "bonk";
+export declare const DEFAULT_RAY_LAUNCHLAB = "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj";
+export declare const SOL_PUMP_FUN_PROGRAM_IDS = "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P";
+export declare const SOL_BONK_FUN_PROGRAM_IDS = "FfYek5vEz23cMkWsdJwG2oa6EphsvXSHrGpdALN4g6W1";
+export declare const SOL_BONK_HINT_ACCOUNTS = "FfYek5vEz23cMkWsdJwG2oa6EphsvXSHrGpdALN4g6W1";
+export declare const LOG_HINT_PUMP_CREATE: RegExp;
+export declare const LOG_HINT_BONK_CREATE: RegExp;
+export declare const LOG_HINT_BONK_KEY: RegExp;
+export declare const SOL_PUMP_OLD_TOKEN_START_SECONDS = 1705622400;
+export declare const SOL_PUMP_OLD_TOKEN_END_SECONDS = 1724025600;
+export declare const SOL_PUMP_NEW_TOKEN_START_SECONDS: number;
+export declare const SOL_BONK_NEW_TOKEN_START_SECONDS = 1727740800;

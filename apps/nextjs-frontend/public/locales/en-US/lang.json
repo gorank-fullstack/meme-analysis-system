@@ -1,0 +1,10 @@
+{
+    "header": {
+        "new": "New pair",
+        "hot": "Trending",
+        "wallet_tracking": "CopyTrade",
+        "holding": "Holding",
+        "follow": "Follow",
+        "setting": "Setting"
+    }
+}

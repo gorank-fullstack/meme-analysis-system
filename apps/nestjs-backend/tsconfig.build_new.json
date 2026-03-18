@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+
+    "rootDir": "../",    // 👈 允许 Nest 项目从 monorepo 根目录起算
+    // "rootDir": ".",                    // ✅ 改回当前项目目录
+    "baseUrl": ".",                                // ✅ 为 paths 做准备
+    "paths": {
+      "@gr/interface-api/*": ["../interface-api/*"],   // ✅ 路径别名解析到源码
+      "@gr/interface-task/*": ["../interface-task/*"]
+    }
+  },
+  "include": ["src", "../interface-api", "../interface-task"],   // ✅ 显式包含跨包源码
+  "exclude": ["node_modules", "test", "dist", "**/*.spec.ts"]
+}

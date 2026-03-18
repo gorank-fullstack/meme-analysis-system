@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+         "rootDir": "./",
+        "outDir": "dist",
+        "declaration": true,
+        // "emitDeclarationOnly": true,    //这里不要再用 "emitDeclarationOnly": true"，否则不会产出 .js
+        // "declarationDir": "dist/types", // 可选，更保险
+        // "declarationDir": "types",   // 声明单独放到 types/
+        "module": "CommonJS",
+        "target": "ES2020",
+        "moduleResolution": "Node",
+        "strict": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        // "index.ts", // 如果有入口文件
+        // "./**/*.ts",                     // 编译所有 .ts 文件
+        // 根据你的实际目录结构调整
+        // "src/**/*",
+        // "lib/**/*",
+        // "index.ts" // 如果有入口文件
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules",
+        // "dist", "dist/**/*", "node_modules", "**/*.d.ts"
+        // "dist", "types", "node_modules"
+    ]
+}

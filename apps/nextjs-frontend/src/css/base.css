@@ -1,0 +1,41 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+h3 {
+    font-weight: normal;
+}
+
+ul, ol, li {
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+    /* color:#000; */
+    cursor: pointer;    /* 大多浏览器，默认是pointer。防止部分浏览器没有默认值 */
+}
+
+
+body{
+    /* background-color: dodgerblue; */
+    font-size:14px;
+}
+
+input {
+    border:0 none;
+    outline-style: none;
+} 
+
+img {
+    /* AI解释：
+    此CSS属性将元素的内容垂直对齐到其父容器的中间。 */
+    vertical-align: middle;
+}

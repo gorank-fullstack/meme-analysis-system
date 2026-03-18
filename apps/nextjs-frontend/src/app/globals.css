@@ -1,0 +1,867 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* @import "tailwindcss"; */
+@import "tailwindcss";
+/* @import "tw-animate-css"; */
+
+/* @custom-variant dark (&:is(.dark *)); */
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+@plugin "daisyui" {
+  /* themes: light --default, dark --prefersdark, */
+  /* cyberpunk,luxury,night,lemonade,coffee,winter,retro,valentine; */
+  themes: dark --default, dark --prefersdark,
+    light, dark, synthwave, retro, cyberpunk,
+    valentine, aqua, cupcake, lemonade,
+    luxury, night, coffee, winter, business,
+    halloween, forest,
+    emerald, black, sunset;
+}
+
+/* @plugin "daisyui" {  
+  include: button;
+} */
+@plugin "daisyui/theme" {
+  name: "dark";
+  /* 注意：此dark实际取值：daisyUi的black主题 */
+  /* ===== 基础色（Base Colors）===== */
+  /* --color-scheme: dark; */
+  /* 注意：修改：，需同步到： */
+  --color-base-100: oklch(0% 0 0);
+  /* #000000 */
+  --color-base-200: oklch(19% 0 0);
+  /* #303030 */
+  --color-base-300: oklch(22% 0 0);
+  /* #383838 */
+  --color-base-content: oklch(87.609% 0 0);
+  /* #dfdfdf */
+
+  /* ===== 主色调 Primary / Secondary / Accent ===== */
+  --color-primary: oklch(35% 0 0);
+  /* #5a5a5a */
+  --color-primary-content: oklch(100% 0 0);
+  /* #ffffff */
+  --color-secondary: oklch(35% 0 0);
+  /* #5a5a5a */
+  --color-secondary-content: oklch(100% 0 0);
+  /* #ffffff */
+  --color-accent: oklch(35% 0 0);
+  /* #5a5a5a */
+  --color-accent-content: oklch(100% 0 0);
+  /* #ffffff */
+
+  /* ===== 中性色 Neutral ===== */
+  --color-neutral: oklch(35% 0 0);
+  /* #5a5a5a */
+  --color-neutral-content: oklch(100% 0 0);
+  /* #ffffff */
+
+  /* ===== 状态色（Info / Success / Warning / Error）===== */
+  --color-info: oklch(45.201% 0.313 264.052);
+  --color-info-content: oklch(89.04% 0.062 264.052);
+
+  --color-success: oklch(51.975% 0.176 142.495);
+  --color-success-content: oklch(90.395% 0.035 142.495);
+
+  --color-warning: oklch(96.798% 0.211 109.769);
+  --color-warning-content: oklch(19.359% 0.042 109.769);
+
+  --color-error: oklch(62.795% 0.257 29.233);
+  --color-error-content: oklch(12.559% 0.051 29.233);
+}
+
+/* 对已有主题进行自定义设置 */
+@plugin "daisyui/theme" {
+  name: "daisyui-dark";
+  /* default: true; */
+  /* 'base-100': '#0f1018'; // ph基础背景色 */
+  --color-base-100: #0f1018;
+  /* --color-primary: blue;
+  --color-secondary: teal; */
+}
+
+@plugin "daisyui/theme" {
+  name: "custom-dark";
+
+  /* 背景色与面板色 */
+  /* --color-base-100: #1a1a1a; */
+  /* 主背景色（比默认暗） */
+  --color-base-100: #0f1018;
+  /* ph基础背景色 */
+  --color-base-200: #2a2a2a;
+  --color-base-300: #3a3a3a;
+
+  /* 前景色（文本） */
+  --color-neutral: #e2e2e2;
+  /* 主文本 */
+  --color-neutral-focus: #ffffff;
+  /* 聚焦状态 */
+
+  /* 主按钮色调 */
+  --color-primary: #6366f1;
+  /* indigo-500，Radix 默认原色 */
+  --color-primary-focus: #4f46e5;
+  --color-primary-content: #ffffff;
+
+  /* 辅助按钮与边框 */
+  --color-secondary: #71717a;
+  --color-secondary-focus: #52525b;
+  --color-secondary-content: #ffffff;
+
+  /* 成功与错误提示 */
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+
+  /* 边框线 */
+  --color-border: #3f3f46;
+
+  /* 自定义浮动菜单或 popover 背景 */
+  --color-popover: #262626;
+  --color-popover-content: #d4d4d8;
+
+  /* 阴影 & 高亮色 */
+  --color-accent: #a855f7;
+  --color-accent-focus: #9333ea;
+}
+
+/* 以下是：dexscreen clone react中的扩展定义 */
+:root {
+  /* 自定义变量 */
+  /* 根据你要的灰色自己定 */
+  --color-base-300-rgb: 230 230 230;
+  /* 明亮的　覆盖 */
+  --ui-light-overlay-1: rgba(255, 255, 255, 0.1);
+  --ui-light-overlay-2: rgba(255, 255, 255, 0.2);
+  --ui-light-overlay-5: rgba(255, 255, 255, 0.5);
+  --ui-light-overlay-8-8: rgba(255, 255, 255, 0.88);
+
+  /* 半透明黑色遮罩--调暗的、昏暗的覆盖 */
+  --ui-dark-overlay-1: rgba(0, 0, 0, 0.1);
+  --ui-dark-overlay-2: rgba(0, 0, 0, 0.2);
+  --ui-dark-overlay-5: rgba(0, 0, 0, 0.5);
+  --ui-dark-overlay-8-8: rgba(0, 0, 0, 0.88);
+
+  /* 日落　覆盖 */
+  /* 暖橙色叠层，适用于日落氛围、温和提示、聚焦背景 */
+  --ui-sunset-overlay-1: rgba(255, 200, 100, 0.1);
+  --ui-sunset-overlay-2: rgba(255, 200, 100, 0.2);
+  /* 更强的暖感，适合强调背景，或页面风格渲染 */
+  --ui-sunset-overlay-5: rgba(255, 200, 100, 0.5);
+  --ui-sunset-overlay-8-8: rgba(255, 200, 100, 0.88);
+
+  --popup-bg-dark: rgba(30, 30, 30, 0.88);
+  --popup-bg-light: rgba(225, 225, 225, 0.88);
+  /* 用于弹窗类边框的通用颜色 */
+  --popup-border-color-dark: rgba(255, 255, 255, 0.1);
+  --popup-border-color-light: rgba(0, 0, 0, 0.1);
+  /* 用于弹窗毛玻璃风格投影 */
+  --popup-shadow-color-dark: rgba(255, 255, 255, 0.1);
+  --popup-shadow-color-light: rgba(0, 0, 0, 0.1);
+  /* 表示毛玻璃背景的边缘光感 */
+  --popup-outline-glow: rgba(255, 255, 255, 0.1);
+  /* --popup-border-color-dark:rgba(255, 255, 255, 0.1); */
+
+  --color-bg-primary: #0e1118;
+  --color-bg-secondary: #141722;
+  --color-bg-tertiary: #1e2330;
+  --color-bg-highlight: #252b3b;
+  --color-text-primary: #fff;
+  --color-text-secondary: #8a94a8;
+  --color-text-tertiary: #636d83;
+  --color-border: #2c3344;
+  /* --color-green: #16c784;
+  --color-red: #ea3943; */
+  /* 注意：修改 --color-green、--color-red 的值，同时需要手动修改：src\components\TokenEvm\EvmTokenChart\Page.tsx
+  里的： myWidget.candleUpColor、myWidget.candleDownColor的值*/
+  --color-green: #4CE666;
+  --color-red: #E64C4C;
+  --color-blue: #4878ff;
+  --color-vs1: #2e628e;
+  --color-vs2: #132a44;
+  --radius: 0.625rem;
+  /* 以下代码---start-----是: 安装:@radix-ui/themes时注入的.与daisyui/theme冲突,删除:radix-ui/themes*/
+  /* --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0); */
+  /* 以下代码---end-----是: 安装:@radix-ui/themes时注入的.与daisyui/theme冲突,删除:radix-ui/themes*/
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out forwards;
+}
+
+@keyframes pulseGreen {
+
+  0%,
+  100% {
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+  }
+
+  50% {
+    border-color: rgba(34, 197, 94, 1);
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3);
+  }
+}
+
+.animate-pulse-green {
+  animation: pulseGreen 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 
+@keyframes pulseAmber　和　.animate-pulse-amber
+是由gpt参考：
+@keyframes pulseGreen　和　.animate-pulse-green
+写出.
+
+提示：
+Tailwind CSS 中的 border-amber-300 对应的 RGB 值是：rgb(252, 211, 77)
+ */
+@keyframes pulseAmber {
+
+  0%,
+  100% {
+    border-color: rgba(252, 211, 77, 0.5);
+    /* Amber base color with transparency */
+    box-shadow: 0 0 0 0 rgba(252, 211, 77, 0.5);
+  }
+
+  50% {
+    border-color: rgba(252, 211, 77, 1);
+    /* Full color */
+    box-shadow: 0 0 0 4px rgba(252, 211, 77, 0.3);
+  }
+}
+
+.animate-pulse-amber {
+  animation: pulseAmber 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 20250729新增--start */
+/* 🔥 toast-glass：仿大厂视觉风格提示框 */
+@keyframes toast-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* 通用 Toast 样式 */
+.gr-toast-success,
+.gr-toast-error,
+.gr-toast-warning {
+  /* .toast-base { */
+  @apply flex items-center gap-2 px-4 py-2 rounded-md text-white font-semibold;
+  /* background-color: rgba(0, 0, 0, 0.6) !important; */
+  /* color: white !important; */
+
+  border-radius: 0.75rem !important;
+  /* 降级处理：去掉模糊，避免 toast 看起来像弹窗 */
+  /* 
+  backdrop-filter: blur(6px) 是什么？
+  让元素“后面的内容”模糊，看起来像毛玻璃。
+  也就是说：
+    元素本身不模糊；
+    背后页面的内容（比如主内容区、卡片、背景图）会被模糊；
+    是一种很现代、很高端的 UI 效果（类似 macOS / iOS 的毛玻璃效果）；
+   */
+  /* backdrop-filter: blur(6px) !important; */
+  /* 
+  那 -webkit-backdrop-filter 是干嘛的？
+  这是为旧版本的 Safari 和部分移动端浏览器准备的兼容写法。它和 backdrop-filter 效果一样，只是针对不同的浏览器内核写法。
+   */
+  /* -webkit-backdrop-filter: blur(6px) !important; */
+
+  /* border: 1px solid #aaaaaa !important; */
+  /* 保留 Sonner 原来的 layout 和 spacing，不动 padding/gap */
+  /* box-shadow: none !important; */
+
+
+  padding: 0.75rem 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+
+  /* 动画：初始状态－－入场动画：0.5s 渐显 */
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* ✨ 浅色系的背景色 */
+html[color-scheme="light"] .gr-toast-success,
+html[color-scheme="light"] .gr-toast-error,
+html[color-scheme="light"] .gr-toast-warning {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  color: black !important;
+}
+
+/* 🌒 深色系的背景色 */
+html[color-scheme="dark"] .gr-toast-success,
+html[color-scheme="dark"] .gr-toast-error,
+html[color-scheme="dark"] .gr-toast-warning {
+  /* background-color: rgba(255, 255, 255, 0.08) !important; */
+  /* 🌒 深色统一为稳定不透明风格，提升识别度 */
+  /* background-color: rgba(30, 30, 30, 0.88) !important; */
+  background-color: var(--popup-bg-dark) !important;
+
+  /* color: white !important; */
+  color: var(--nc) !important;
+  border: 1px solid var(--popup-border-color-dark) !important;
+  /* 视觉感一致的立体阴影（非强对比） */
+  box-shadow: 0 4px 16px var(--popup-shadow-color-dark) !important;
+}
+
+/* 成功提示 */
+.gr-toast-success {
+  /* @apply toast-base; */
+}
+
+.gr-toast-success[data-state='closed'] {
+  animation: toast-fade-out 1.6s ease-in-out forwards;
+}
+
+/* 成功的绿色图标 */
+.gr-toast-success svg {
+  color: #22c55e !important;
+  /*  绿色图标 */
+  flex-shrink: 0;
+  /*  防止挤压变形 */
+  width: 1.25rem;
+  /*  大小统一 */
+  height: 1.25rem;
+}
+
+
+/* 失败提示 */
+.gr-toast-error {
+  /* @apply toast-base; */
+}
+
+.gr-toast-error[data-state='closed'] {
+  animation: toast-fade-out 1.6s ease-in-out forwards;
+}
+
+/* 出错的红色图标 */
+.gr-toast-error svg {
+  color: #ef4444 !important;
+  flex-shrink: 0;
+  /* 保持固定宽度，不被文字挤压 */
+  width: 1.25rem;
+  /* 可调：如 20px */
+  height: 1.25rem;
+}
+
+/* 警告提示 */
+.gr-toast-warning {
+  /* @apply toast-base; */
+}
+
+.gr-toast-warning[data-state='closed'] {
+  animation: toast-fade-out 1.6s ease-in-out forwards;
+}
+
+/* 警告的橙色图标 */
+.gr-toast-warning svg {
+  color: #f97316 !important;
+  /* Tailwind 的 orange-500 */
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+/* ✅ 调整 icon 容器间距 */
+[data-sonner-toast] svg {
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+/* ✅ 设置默认状态：完全不透明 */
+/* @keyframes toast-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-toast {
+  @apply opacity-100 transition-opacity;
+}
+
+.fade-toast[data-state='closed'] {
+  animation: toast-fade-out 3s ease-in-out forwards;
+} */
+/* .fade-toast {
+  @apply transition-opacity duration-1000 opacity-100;
+}
+
+.fade-toast[data-state='closed'] {
+  @apply opacity-0;
+} */
+/* 20250729新增--end */
+/* 20250729新增group-dialog--start */
+
+/* .dialog-glass {
+  @apply flex justify-center items-start;
+  @apply bg-base-200/90 border border-base-300/90 text-primary-content;
+  @apply rounded-xl shadow-xl backdrop-blur;
+  @apply w-60 z-[9999];
+  @apply opacity-0 translate-y-1 animate-dialog-in;
+} */
+/* @keyframes gr-dialog-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* 用于动画入场 */
+/* 
+animate-dialog-in动画效果，要单独加在：className里。不能和其他静态样式，都用：@apply 写
+静态样式（如 rounded, shadow, bg-*）混进了动态样式（如 opacity-0, translate-y-1）
+ */
+ /* 
+ Tailwind 的 @apply 不能和任何原生属性混用，与“动画类”无关
+  */
+  /* @apply opacity-80 translate-y-1; */
+/* .gr-animate-dialog-in {
+  
+  @apply opacity-80 translate-y-1 border-[5px] border-pink-500;
+  animation: dialog-in 0.3s ease-out forwards;
+} */
+
+/* 弹窗动画 */
+/* 全局动画控制（统一设置 0.3s） */
+.gr-animate-in {
+  animation-duration: 0.3s !important;  /* 覆盖默认值 */
+  animation-timing-function: ease-out;  /* 统一缓动函数 */
+  animation-fill-mode: forwards;        /* 动画结束后保持最终状态 */
+}
+
+/* 只定义动画效果，不重复设置时长 */
+.gr-fade-in {
+  animation-name: fadeIn;  /* 仅指定动画名称，时长由 .animate-in 控制 */
+}
+
+.gr-zoom-in-85 {
+  animation-name: zoomIn;  /* 仅指定动画名称，时长由 .animate-in 控制 */
+  transform-origin: var(--radix-popover-content-transform-origin); /* 确保缩放中心正确 */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.85); }  /* 注意：你之前用的是 zoom-in-85，所以这里是 0.85 */
+  to { transform: scale(1); }
+}
+
+ /* ✅ 方案1：拆块写 */
+/* .gr-animate-dialog-in { @apply opacity-50 translate-y-1; }
+.gr-animate-dialog-in { animation: dialog-in 0.3s ease-out forwards; } */
+
+.gr-dialog-glass {
+  @apply flex justify-center items-start text-primary-content rounded-xl shadow-xl backdrop-blur w-60 z-[9999];
+}
+
+/* 浅色，背景更透亮 */
+html[color-scheme="light"] .gr-dialog-glass {
+  /* @apply bg-base-200/90 border border-base-300/90; */
+  @apply bg-base-200/86 border border-base-300/86;
+}
+
+
+
+/* ⚪️ 亮色系的弹出收藏对话框样式 */
+html[color-scheme="light"] .gr-dialog-glass {
+
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* 原本是 0.5，现在提到 0.88 */
+  /* background-color: var(--ui-dark-overlay-1) !important; */
+  /* background-color: "base-300"/9 !important; */
+  /* background-color: rgb(var(--color-base-300) / 0.5); */
+  /* background-color: rgb(var(--color-base-300-rgb) / 0.8); */
+
+  /* border: 1px solid var(--popup-border-color-light); */
+  /* border: 1px solid var(--color-base-300); */
+  /* 
+  毛玻璃效果：box-shadow，非必须（增强视觉）
+  让弹窗边缘有一个“漂浮+虚影”的感觉，增强毛玻璃的立体感，但不是毛玻璃的核心
+   */
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); */
+  /* 
+  毛玻璃效果：backdrop-filter　毛玻璃效果的核心
+   */
+  /* backdrop-filter: blur(4px); */
+  /* 
+  毛玻璃效果：-webkit-backdrop-filter 兼容旧版 Safari
+   */
+  /* -webkit-backdrop-filter: blur(4px); */
+
+  /* ⬇️ 模糊降级，不模糊内容，只加透明感和阴影 */
+  /* ❌ 去掉 backdrop-filter */
+  box-shadow: 0 4px 16px var(--popup-shadow-color-light);
+}
+
+/*  深色背景下，透明度建议低一点，避免“发灰”、“看不清边界” */
+html[color-scheme="dark"] .gr-dialog-glass {
+  /* @apply bg-base-200/90 border border-base-300/90; */
+  @apply bg-base-200/82 border border-base-300/82;
+}
+
+/* ⚫️ 暗色系的弹出收藏对话框样式 */
+html[color-scheme="dark"] .gr-dialog-glass {
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  /* 更稳定、贴合主题 */
+  /* background-color: rgba(30, 30, 30, 0.5);  */
+  /* background-color: rgba(30, 30, 30, 0.88); */
+  /* 原本是 0.5，现在提到 0.88 */
+  /* background-color: var(--popup-bg-dark) !important; */
+  /* background-color: var(--color-base-200) !important; */
+  /* background-color: rgb(var(--b2) / 0.88); */
+
+  /* border: 1px solid var(--popup-border-color-dark); */
+  /* border: 1px solid var(--color-base-300); */
+  /* 
+  毛玻璃效果：box-shadow，非必须（增强视觉）
+  让弹窗边缘有一个“漂浮+虚影”的感觉，增强毛玻璃的立体感，但不是毛玻璃的核心
+   */
+  /* box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1); */
+  /* 
+  毛玻璃效果：backdrop-filter　毛玻璃效果的核心
+   */
+  /* backdrop-filter: blur(6px); */
+  /* 
+  毛玻璃效果：-webkit-backdrop-filter 兼容旧版 Safari
+   */
+  /* -webkit-backdrop-filter: blur(6px); */
+
+  /* ⬇️ 模糊降级，不模糊内容，只加透明感和阴影 */
+  /* ❌ 去掉 backdrop-filter */
+  box-shadow: 0 4px 16px var(--popup-shadow-color-dark);
+}
+
+/* 20250729新增group-dialog--end */
+
+/* K线颜色主题适配：根据 color-scheme 自动切换颜色 */
+/* [custom-css] 2025-07-31 k-line color-scheme support --start */
+html[color-scheme="dark"] .gr-k-line-green {
+  /* 深色主题下的绿色（上涨） */
+  /* ok3的值  */
+  /* color:#25a750; */
+
+  /* text-green-300的值：#7bf1a8 */
+  color: #7bf1a8;
+}
+
+html[color-scheme="dark"] .gr-k-line-red {
+  /* 深色主题下的红色（下跌） */
+  /* ok3的值  */
+  /* color:#ca3f64; */
+
+  /* text-red-300的值：#fca5a5 */
+  color: #fca5a5;
+}
+
+html[color-scheme="light"] .gr-k-line-green {
+  /* 浅色主题下的绿色（上涨） */
+  color: #31bd65;
+}
+
+html[color-scheme="light"] .gr-k-line-red {
+  /* 浅色主题下的红色（下跌） */
+  color: #eb4b6d;
+}
+
+/* [custom-css] 2025-07-31 k-line color-scheme support --end */
+
+/* 20250730新增k line --end */
+/* 20250730新增trending row--start */
+.gr-trending-row {
+  @apply cursor-pointer border border-transparent transition-colors duration-200 h-14;
+}
+
+html[color-scheme="dark"] .gr-trending-row {
+  @apply hover:bg-neutral hover:border hover:border-neutral-content/10
+}
+
+html[color-scheme="light"] .gr-trending-row {
+  @apply hover:bg-neutral/10 hover:border hover:border-neutral-content/20
+}
+
+/* 20250730新增trending row--end */
+
+/* 20250723新增--start */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.2s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.2s ease-out;
+}
+
+
+
+/* 20250723新增--end */
+/* 
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   */
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+h3 {
+  font-weight: normal;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  /* color:#000; */
+  cursor: pointer;
+  /* 大多浏览器，默认是pointer。防止部分浏览器没有默认值 */
+}
+
+body {
+  /* background-color: dodgerblue; */
+  font-size: 14px;
+}
+
+input {
+  /* border: 0 none; */
+  outline-style: none;
+}
+
+img {
+  /* AI解释：
+    此CSS属性将元素的内容垂直对齐到其父容器的中间。 */
+  vertical-align: middle;
+}
+
+/* .Drop_down li:hover {
+  --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+} */
+
+/* 
+此：@theme inline {……}，经判断：
+可能是安装：升级TailWindCss或Dasyui时的注入，禁用此@theme inline 后会样式错乱
+ */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* 
+此：.dark {……}，经判断：
+可能1:是安装： shadcn 的注入，删除shadcn没有自动移除注入
+可能2:TailWindCss的注入，但用的是dasyui主题，禁用.dark {……}主题没错乱
+ */
+/* .dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+} */
+
+
+.group-dialog-old {
+  display: flex;
+  justify-content: center;
+  /* base-100 在 DaisyUI 中映射为 --b1 */
+  /* background-color: var(--b1); */
+  /* neutral-content	--nc	主文字颜色 */
+  color: var(--nc);
+  /* 亮色边框 */
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* rounded-md */
+  /* border-radius: 0.5rem;  */
+  border-radius: 0.75rem;
+  width: 240px;
+
+  z-index: 9999;
+
+  /* border-[2px] */
+  /* border-width: 2px;  */
+  /* 提高暗色边框亮度 */
+  /* border: 1px solid rgba(255, 255, 255, 0.15);  */
+
+  /* fallback */
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);  */
+  /* 更深阴影，立体感 */
+  /* box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);     */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+
+  /* backdrop-filter: blur(6px); */
+  /* -webkit-backdrop-filter: blur(6px); */
+
+  /* 入场动画 */
+  opacity: 0;
+  transform: translateY(6px);
+  animation: dialog-in 0.3s ease-out forwards;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

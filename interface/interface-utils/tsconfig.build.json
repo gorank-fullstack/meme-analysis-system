@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "rootDir": ".",            // 🔹 声明源文件目录（相对 include 根）
+      "outDir": "dist",          // 🔹 输出到 dist
+      "declaration": true,
+      "emitDeclarationOnly": false
+    },
+    "exclude": ["dist", "test", "**/*.spec.ts"]
+  }
+  
