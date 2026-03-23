@@ -1,3 +1,29 @@
+<p align="left">
+  语言切换
+</p>
+
+<p align="left">
+  <a href="./README.md">English</a> | 
+  <a href="./README.zh-CN.md">中文</a>
+</p>
+
+<p align="left">
+  <!-- Core Framework -->
+  <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux" />
+</p>
+
+<p align="left">
+  <!-- UI / Styling -->
+  <img src="https://img.shields.io/badge/TailwindCSS-UI-38B2AC?logo=tailwind-css" />
+  <img src="https://img.shields.io/badge/DaisyUI-Components-5A0EF8" />
+  <img src="https://img.shields.io/badge/Radix_UI-Unstyled-black" />
+  <img src="https://img.shields.io/badge/TradingView-Chart-blue" />
+</p>
+
+---  
+
 关键词：**Web3 Token 实时行情分析平台 (Next.js + TypeScript)**
 
 技术栈：Next.js · React · TypeScript · Redux Toolkit · TailwindCSS · DaisyUI

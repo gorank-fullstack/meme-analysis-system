@@ -1,3 +1,24 @@
+<p align="left">
+  语言切换
+</p>
+
+<p align="left">
+  <a href="./README.md">English</a> | 
+  <a href="./README.zh-CN.md">中文</a>
+</p>
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" />
+  <img src="https://img.shields.io/badge/NestJS-Backend-red?logo=nestjs" />
+  <img src="https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux" />
+  <img src="https://img.shields.io/badge/Redis-Cache-red?logo=redis" />
+  <img src="https://img.shields.io/badge/Web3-Multi--Chain-green" />
+  <img src="https://img.shields.io/badge/license-MIT-yellow" />
+</p>
+
+---
+
 # ## Part 1: Monorepo Project Overview
 
 **goRank** is a Web3 token real-time ranking and scoring system built with **NestJS + Next.js**.
