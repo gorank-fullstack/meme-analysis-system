@@ -1,10 +1,10 @@
 <p align="left">
-  语言切换
+  语言
 </p>
 
 <p align="left">
   <a href="./README.md">English</a> | 
-  <a href="./README.zh-CN.md">中文</a>
+  <strong>中文</strong>
 </p>
 
 <p align="left">
@@ -757,8 +757,8 @@ pnpm run start:prod
 
 如果您有任何问题、建议或合作想法：
 
-- GitHub: https://github.com/gorank-fullstack
-- Telegram: t.me/gorank_fullstack
-- Email: gorank1024@gmail.com
+* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
+* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

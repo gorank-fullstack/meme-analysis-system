@@ -1,9 +1,9 @@
 <p align="left">
-  语言切换
+  Language
 </p>
 
 <p align="left">
-  <a href="./README.md">English</a> | 
+  <strong>English</strong> | 
   <a href="./README.zh-CN.md">中文</a>
 </p>
 

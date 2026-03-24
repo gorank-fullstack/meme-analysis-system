@@ -1,9 +1,9 @@
 <p align="left">
-  语言切换
+  Language
 </p>
 
 <p align="left">
-  <a href="./README.md">English</a> | 
+  <strong>English</strong> | 
   <a href="./README.zh-CN.md">中文</a>
 </p>
 
@@ -348,7 +348,7 @@ apps\nextjs-frontend\src\components\Chart\TradingView\CandlestickChart.tsx
 If you have any questions, suggestions, or collaboration ideas:
 
 * GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: t.me/gorank_fullstack
+* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---
