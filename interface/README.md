@@ -1,234 +1,262 @@
----
+<p align="left">
+  Language
+</p>
 
-## 📘 interface/README.md
-
-```md
-# Interface Layer
-
-This directory defines the **data contracts, interface protocols, and shared type definitions**
-for the Meme Analysis System monorepo.
-
-It serves as the system’s **Boundary Layer**, responsible for isolating and standardizing
-data interactions between the following modules:
-
-- External data sources (on-chain / off-chain third-party APIs)
-- Backend services (NestJS)
-- Frontend consumers (Next.js)
-
-This directory **contains no business logic implementations**.
-It is used exclusively to define:
-- TypeScript interfaces and types
-- Upstream API data structures
-- Unified data formats
-- Shared constants and utility types
-```
+<p align="left">
+  <strong>English</strong> | 
+  <a href="./README.zh-CN.md">中文</a>
+</p>
 
 ---
 
-## 📂 Directory Structure
+<p align="left">
+  README Navigation
+</p>
 
-```md
-## Directory Layout
+<p align="left">
+  <a href="../README.md">root</a> &gt; <strong>interface</strong>
+</p>
 
+---
+
+## 1.0 Interface Layer
+
+This directory is used to define **data contracts, interface protocols, and shared type definitions** within the Meme Analysis System monorepo.
+
+This layer acts as the system’s **Boundary Layer**, responsible for isolating and standardizing data interactions between the following modules:
+
+1. External data sources (on-chain / off-chain third-party APIs)
+2. Backend services (NestJS)
+3. Frontend consumers (Next.js)
+
+This directory does **not contain any business logic implementation**, and is only used to define:
+
+1. TypeScript interfaces (`interface` / `type`)
+2. Upstream API data structures
+3. Unified data formats
+4. Shared constants and utility types
+
+---
+
+## 2.0 Directory Structure
+
+```text
 interface/
-├─ axios-client/              # HTTP client wrapper (based on Axios)
-├─ interface-api/             # Third-party API interface definitions
-│  ├─ platform-data/          # Market data / on-chain data platforms
-│  ├─ platform-safe/          # Token security & risk assessment platforms
-│  └─ uniform-data/           # Unified data structures exposed to frontend
-├─ interface-base/            # Base type definitions (chain types, time windows, etc.)
-├─ interface-task/            # Interfaces for scheduled tasks and job orchestration
-├─ interface-utils/           # Shared utility modules (math, sorting, time)
+├─ axios-client/            # Unified HTTP / Axios client wrapper
+│
+├─ interface-api/           # Third-party API interface definitions
+│  ├─ platform-data/        # Market data / on-chain data platforms
+│  ├─ platform-safe/        # Token security & risk detection platforms
+│  └─ uniform-data/         # Unified data models + API output contract layer
+│
+├─ interface-base/          # Base type definitions (chain types, time windows, etc.)
+│  ├─ chain_api.ts
+│  ├─ chain_type.ts         # Chain types: SPL / EVM / TVM / FVM / TAO / Move
+│  ├─ evm-address.ts        # Special EVM address definitions
+│  ├─ gp-common-token-types.ts  # Tri-state (T3State): -1 (unknown) / 0 (no/safe) / 1 (yes/risk)
+│  └─ platform-types.ts     # Platform types, default ProgramId, SOL_PUMP / SOL_BONK constants
+│
+├─ interface-task/          # Scheduled tasks & job-related interfaces
+│  └─ uniform-data/
+│
+└─ interface-utils/         # Shared utility modules (math, sorting, time)
+   ├─ common.ts
+   ├─ math.ts               # Numeric processing, percentage conversion, rounding / floor
+   ├─ sort.ts               # Sorting utilities
+   └─ time.ts               # Time constants
 ```
 
 ---
 
-## 🌐 axios-client
+## 3.0 axios-client
 
-```md
-## axios-client
+A shared HTTP access layer used by all backend modules to communicate with external APIs.
 
-A unified HTTP client wrapper used by all backend modules
-to access external APIs.
+### 3.1 Responsibilities
 
-### Responsibilities
-- Centralized Axios instance creation and configuration
-- Default timeout and headers management
-- Request and response interceptors
-- Unified injection of authentication data (e.g. API tokens)
+1. Unified creation and configuration of Axios instances
+2. Default timeout and headers management
+3. Request and response interceptors
+4. Centralized injection of authentication info (e.g., tokens)
 
-### Design Notes
-- Contains no platform-specific logic
-- Reusable across multiple API modules
-```
+### 3.2 Design Notes
+
+1. Contains **no platform-specific logic**
+2. Designed to be reused across multiple API modules
 
 ---
 
-## 🔌 interface-api
+## 4.0 interface-api
 
-```md
-## interface-api
+Defines the **raw API data structures** of third-party platforms (Raw API Interfaces).
 
-Defines **raw API data structures** for third-party platforms.
+This layer strictly mirrors upstream API response formats, without unification or normalization. It is mainly used for:
 
-Interfaces in this layer **strictly mirror upstream API responses**.
-No normalization or unification is performed here.
-They are primarily used to:
-- Describe actual returned fields
-- Serve as input for data transformation and scoring logic
-```
+1. Describing actual response fields
+2. Serving as input for data transformation and scoring logic
 
 ---
 
-### 📊 platform-data
+### 4.1 platform-data
 
-```md
-### interface-api/platform-data
+Interface definitions for market data and on-chain data platforms, currently including:
 
-Interface definitions for market data and on-chain data platforms,
-currently including:
+1. GeckoTerminal
+2. Moralis
+3. Solscan
 
-- GeckoTerminal
-- Moralis
-- Solscan
+#### Characteristics
 
-### Characteristics
-- Closely aligned with upstream API field definitions
-- No business semantics introduced
-- Acts as the data source for unified structures (uniform-data)
-```
+1. Closely aligned with upstream raw fields
+2. No business semantics introduced
+3. Serves as the data source for unified models (`uniform-data`)
 
 ---
 
-### 🛡 platform-safe
+### 4.2 platform-safe
 
-```md
-### interface-api/platform-safe
-
-Interface definitions for token security analysis
-and risk assessment platforms.
+Interface definitions for token security detection and risk assessment platforms.
 
 Currently integrated:
-- GoPlusLabs
 
-### Usage Scenarios
-- Token risk identification
-- High-risk asset filtering
-- Security screening before ranking or exposure
-```
+GoPlusLabs
 
----
+#### Use Cases
 
-### 🔄 uniform-data
-
-```md
-### interface-api/uniform-data
-
-Defines **unified data structures** consumed by the frontend.
-
-### Design Purpose
-API responses from different platforms vary significantly.
-This layer is responsible for transforming multi-source data into formats that are:
-- Field-stable
-- Semantically consistent
-- Ready for direct frontend consumption
-
-### Primary Consumers
-- Frontend API responses
-- Ranking and scoring outputs
-- Aggregated token data views
-```
+1. Token risk identification
+2. High-risk asset filtering
+3. Security screening before ranking and exposure
 
 ---
 
-## 🧱 interface-base
+### 4.3 uniform-data
 
-```md
-## interface-base
+Defines the **internal unified data model**, and serves as the **stable API Contract Layer** for external output, directly consumed by the frontend.
 
-System-level base type definitions shared across all subsystems.
+#### Design Purpose
+
+Due to significant differences in API response structures across platforms, this layer standardizes the data model:
+
+1. Stable field definitions
+2. Consistent semantics
+3. Frontend-friendly structure
+
+#### Main Consumers
+
+1. Frontend API responses
+2. Ranking and scoring outputs
+3. Aggregated token data views
+
+---
+
+## 5.0 interface-base
+
+A system-level base type definition module shared across all subsystems.
+
+Main contents include:
+
+1. Chain type definitions (EVM / Solana, etc.)
+2. Time windows and time-related constants
+3. Cross-module shared base types
+
+This module contains **no platform-specific or business logic**.
+
+---
+
+## 6.0 interface-task
+
+Defines types and structures related to **scheduled tasks (Task) and the scheduling system**.
+
+This directory is only used to define:
+
+1. Key types used in scheduled tasks
+2. Pagination state structures
+3. Read-only data structures required for task initialization
+
+It does **not include**:
+
+1. Data fetching logic
+2. Data transformation logic
+3. Sorting, scoring, or computation logic
+
+---
+
+### 6.1 uniform-data
+
+Defines a unified **Key system and state structures** for task scheduling scenarios.
+
+This layer mainly serves:
+
+1. Scheduled tasks (Cron / second-level scheduling)
+2. Task distribution across multi-chain × multi-ranking × multi-time-window
+3. Unified management of ranking pagination states
+
+#### Current Definitions
+
+1. Chain + ranking type keys (e.g., `trending`, `new`)
+2. Combined keys of chain + ranking + time granularity
+3. Pagination state structure (`current_page` / `max_page`)
+4. Empty data initialization structures
+
+---
+
+## 7.0 interface-utils
+
+A shared backend utility module reused across multiple services.
+
+Characteristics:
+
+1. Pure functions
+2. Deterministic output
 
 Includes:
-- Chain type definitions (EVM / Solana, etc.)
-- Time window and interval constants
-- Cross-module foundational types
 
-This module contains no platform-specific or business logic.
+1. `math.ts` — Numeric computation and precision-safe utilities
+2. `sort.ts` — Sorting helper functions
+3. `time.ts` — Time constants and time window utilities
+
+---
+
+## 8.0 Design Principles
+
+1. Core modules define **interfaces and types only**
+2. Utility modules provide **pure function implementations**
+3. Strong typing is preferred over implicit conventions
+4. Clearly distinguish the following data layers:
+
+   1. Upstream raw data (Raw Data)
+   2. Unified system data (Uniform Data)
+   3. Frontend consumption model (View Model)
+5. Designed for future extensibility and data source replacement
+
+---
+
+### 8.1 Dependency Direction Constraints
+
+To ensure a clear and maintainable interface layer, dependencies must follow a **strict one-way flow**:
+
+```
+raw (platform-data / platform-safe)
+→ uniform-data
+→ task / controller
 ```
 
----
+The following are **not allowed**:
 
-## ⏱ interface-task
+1. `uniform-data` depending on `raw` (reverse dependency)
+2. `task` directly depending on `raw` (bypassing `uniform-data`)
+3. Cross-layer circular dependencies
 
-The **type and structure definition layer** for scheduled tasks
-and the job orchestration system.
-
-This directory is used exclusively to define:
-
-* Key types used in scheduled tasks
-* Pagination state structures
-* Read-only data structures required for task initialization
-
-❗ Does NOT include:
-
-* Data fetching logic
-* Data transformation logic
-* Sorting, scoring, or calculation logic
+All dependencies must flow **top-down in a single direction**.
 
 ---
 
-### interface-task/uniform-data
+## Contact
 
-Defines a **unified key system and state structures**
-specifically for task scheduling scenarios.
+If you have any questions, suggestions, or collaboration ideas:
 
-This layer primarily supports:
-
-* Scheduled jobs (Cron / high-frequency tasks)
-* Multi-chain × multi-ranking × multi-timeframe task dispatching
-* Unified pagination state management for ranking tasks
-
-### Currently includes only the following definitions
-
-* Chain + ranking type keys (e.g. trending / new)
-* Composite keys: chain + ranking + time granularity
-* Task pagination state structures (`current_page / max_page`)
-* Empty-state initialization structures for each task dimension
-
----
-
-## 🧰 interface-utils
-
-```md
-## interface-utils
-
-Shared backend utility modules reused across multiple services.
-
-Includes:
-- math.ts   —— Numeric calculations and precision-safe helpers
-- sort.ts   —— General-purpose sorting utilities
-- time.ts   —— Unified time constants and time window definitions
-
-### Design Principles
-- No side effects
-- No external service dependencies
-- Pure functions with deterministic output
-```
-
----
-
-## 🧠 Design Principles
-
-```md
-## Design Principles
-
-- Define interfaces and types only; no business logic implementation
-- Strong typing is preferred over implicit conventions
-- Clearly distinguish between the following data layers:
-  - Raw upstream platform data
-  - Unified internal system data structures
-  - Frontend-ready consumable data formats
-- Designed to support future data source expansion or replacement
-```
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
+* Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

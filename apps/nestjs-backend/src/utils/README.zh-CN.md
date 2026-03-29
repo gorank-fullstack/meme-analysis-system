@@ -1,3 +1,24 @@
+<p align="left">
+  语言
+</p>
+
+<p align="left">
+  <a href="./README.md">English</a> | 
+  <strong>中文</strong>
+</p>
+
+---
+
+<p align="left">
+  README 导航
+</p>
+
+<p align="left">
+  <a href="../../../../README.zh-CN.md">root</a> &gt; apps &gt; <a href="../../README.zh-CN.md">nestjs-backend</a> &gt; src &gt; <strong>utils</strong>
+</p>
+
+---
+
 # 📁 src/utils
 
 本目录为系统的**核心工具与算法层**，用于承载以下职责：

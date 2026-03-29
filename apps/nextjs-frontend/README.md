@@ -7,6 +7,28 @@
   <a href="./README.zh-CN.md">中文</a>
 </p>
 
+---
+
+<p align="left">
+  README Navigation
+</p>
+
+<p align="left">
+  <a href="../../README.md">root</a> &gt; apps &gt; <strong>nextjs-frontend</strong>
+</p>
+
+---
+
+## **Web3 Token Real-Time Analytics Platform (Next.js + TypeScript)**
+
+**Tech Stack:** Next.js · React · TypeScript · Redux Toolkit · TailwindCSS · DaisyUI
+
+This is a frontend system built with **Next.js + TypeScript + Redux Toolkit**, designed for **real-time Web3 token data analytics**.
+
+The application focuses on visualizing **multi-chain token trading data**, including charts, rankings, and user interactions.
+
+---
+
 <p align="left">
   <!-- Core Framework -->
   <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" />
@@ -24,17 +46,7 @@
 
 ---
 
-# **Web3 Token Real-Time Analytics Platform (Next.js + TypeScript)**
-
-**Tech Stack:** Next.js · React · TypeScript · Redux Toolkit · TailwindCSS · DaisyUI
-
----
-
 ## Part 1: Next.js Project Overview
-
-This is a frontend system built with **Next.js + TypeScript + Redux Toolkit**, designed for **real-time Web3 token data analytics**.
-
-The application focuses on visualizing **multi-chain token trading data**, including charts, rankings, and user interactions.
 
 ### Implemented Features
 
@@ -347,8 +359,8 @@ apps\nextjs-frontend\src\components\Chart\TradingView\CandlestickChart.tsx
 
 If you have any questions, suggestions, or collaboration ideas:
 
-* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

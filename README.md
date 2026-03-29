@@ -7,6 +7,50 @@
   <a href="./README.zh-CN.md">中文</a>
 </p>
 
+---
+
+<p align="left">
+  README Navigation
+</p>
+
+<p align="left">
+  <strong>root</strong>
+</p>
+
+<pre>
+root
+│
+├ <strong>README.md</strong>                Project entry
+│
+├ apps
+│   ├ nestjs-backend
+│   │   └ <a href="./apps/nestjs-backend/README.md">README.md</a>        Redis / APIs / env / build & run
+│   │
+│   └ nextjs-frontend
+│       └ <a href="./apps/nextjs-frontend/README.md">README.md</a>       Frontend env / build & run
+│
+└ interface
+    └ <a href="./interface/README.md">README.md</a>            Shared data structures
+</pre>
+
+---
+
+> This project includes the root README, subproject READMEs (nestjs / nextjs / interface), and backend module-level READMEs.
+
+---
+
+<p align="left">
+  goRank
+</p>
+
+A Web3 token ranking and scoring system built with **NestJS + Next.js**.
+
+- Multi-source data aggregation  
+- Redis-based caching
+- System Requirements: Node.js ≥ 18, Redis ≥ 5.0
+
+---
+
 <p align="left">
   <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" />
   <img src="https://img.shields.io/badge/NestJS-Backend-red?logo=nestjs" />
@@ -20,13 +64,6 @@
 ---
 
 # ## Part 1: Monorepo Project Overview
-
-**goRank** is a Web3 token real-time ranking and scoring system built with **NestJS + Next.js**.
-
-> A real-time Web3 token ranking and scoring engine powered by multi-source data aggregation and Redis caching.
-> Runtime: Node.js ≥ 18, Redis ≥ 5.0 (see requirements below)
-
----
 
 ### Project Info
 
@@ -227,43 +264,12 @@ Click the image to watch the full demo:
 
 # ## Part 5: Repository Structure
 
-### Overview
-
 ```text
 apps/
 ├─ nestjs-backend/      # NestJS backend service
 └─ nextjs-frontend/     # Next.js frontend application
 interface/              # Shared types and constants
 ```
-
----
-
-### README Navigation
-
-```text
-root
-│
-├ README.md                Project entry
-│
-├ apps
-│   ├ nestjs-backend
-│   │   └ README.md        Redis / APIs / env / build & run
-│   │
-│   └ nextjs-frontend
-│       └ README.md        Frontend env / build & run
-│
-└ interface
-    └ README.md            Shared data structures
-```
-
----
-
-> This project includes:
-
-* Root README
-* Subproject READMEs (nestjs / nextjs / interface)
-* Additional module-level READMEs inside backend
-
 ---
 
 # ## Part 6: Requirements
@@ -339,8 +345,8 @@ Client network socket disconnected before secure TLS connection was established
 
 If you have any questions or collaboration ideas:
 
-* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

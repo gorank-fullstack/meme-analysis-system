@@ -7,6 +7,49 @@
   <strong>中文</strong>
 </p>
 
+---  
+
+<p align="left">
+  README 导航
+</p>
+
+<p align="left">
+  <a href="../../README.zh-CN.md">root</a> &gt; apps &gt; <strong>nestjs-backend</strong>
+</p>
+
+<pre>
+nestjs-backend
+│
+├ <strong>README.zh-CN.md</strong>                         后端整体架构说明（NestJS 分层设计）
+│
+└ src
+   │
+   ├ api
+   │   └ <a href="./src/api/README.zh-CN.md">README.zh-CN.md</a>        平台数据抓取 / 统一数据结构
+   │
+   ├ redis
+   │   └ <a href="./src/redis/README.zh-CN.md">README.zh-CN.md</a>      Redis 配置 / 缓存策略
+   │
+   ├ sort
+   │   └ <a href="./src/sort/README.zh-CN.md">README.zh-CN.md</a>       Token 排序算法 / 热度计算
+   │
+   ├ task
+   │   └ <a href="./src/task/README.zh-CN.md">README.zh-CN.md</a>       定时任务 / 多链数据抓取
+   │
+   └ utils
+       └ <a href="./src/utils/README.zh-CN.md">README.zh-CN.md</a>      公共工具函数（数学 / 时间 / 排序）
+</pre>
+
+---
+
+关键词：**Web3 · Data Aggregation · Token Ranking · NestJS Backend · API Service**
+
+本项目为 Web3 Token 实时分析系统的后端服务，
+负责多源链上数据聚合、标准化处理与评分计算，
+并基于 Redis 构建高性能排行榜 API，供 Next.js 前端调用。
+
+---
+
 <p align="left">
   <!-- Core -->
   <img src="https://img.shields.io/badge/NestJS-Backend-red?logo=nestjs" />
@@ -15,7 +58,7 @@
   <img src="https://img.shields.io/badge/Web3-Multi--Chain-green" />
 </p>
 
----  
+---
 
 ## 目录
 
@@ -51,12 +94,6 @@
 
 <a id="intro"></a>
 ## 第一部分：NestJS 项目介绍
-
-关键词：**Monorepo · 全栈 · Web3 · 实时分析 · Token API**
-
-本项目为 Web3 Token 实时分析系统的后端服务，
-负责多源链上数据聚合、标准化处理与评分计算，
-并基于 Redis 构建高性能排行榜 API，供 Next.js 前端调用。
 
 ### 已实现的功能
 
@@ -346,8 +383,6 @@ apps/nestjs-backend/src/utils/sort/uniform-data/sort-hot_rule_github.ts
 <a id="structure"></a>
 ## 第六部分：仓库结构
 
-### 一、仓库结构总览
-
 项目采用“数据抓取 → 统一数据处理 → 排序计算 → API 输出”的分层架构。
 
 ```text
@@ -379,32 +414,6 @@ nestjs-backend/
 
 ```
 
----
-### 二、分层 README 导航
-
-以下目录包含各模块的说明文档（README 文件）：
-
-```text
-nestjs-backend/
-├─ README.md              # 后端整体架构说明（NestJS 分层说明）
-│
-├─ src/
-│  ├─ api/                # 平台数据抓取与统一数据处理
-│  │   └─ README.md
-│  │
-│  ├─ redis/              # Redis 配置与缓存逻辑
-│  │   └─ README.md
-│  │
-│  ├─ sort/               # Token 排序算法模块
-│  │   └─ README.md
-│  │
-│  ├─ task/               # 定时任务与数据抓取任务
-│  │   └─ README.md
-│  │
-│  └─ utils/              # 公共工具函数
-│      └─ README.md
-
-```
 ---
 
 <a id="apikey"></a>
@@ -757,8 +766,8 @@ pnpm run start:prod
 
 如果您有任何问题、建议或合作想法：
 
-* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

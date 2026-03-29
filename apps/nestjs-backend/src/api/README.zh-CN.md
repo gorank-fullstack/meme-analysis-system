@@ -1,3 +1,24 @@
+<p align="left">
+  语言
+</p>
+
+<p align="left">
+  <a href="./README.md">English</a> | 
+  <strong>中文</strong>
+</p>
+
+---
+
+<p align="left">
+  README 导航
+</p>
+
+<p align="left">
+  <a href="../../../../README.zh-CN.md">root</a> &gt; apps &gt; <a href="../../README.zh-CN.md">nestjs-backend</a> &gt; src &gt; <strong>api</strong>
+</p>
+
+---
+
 # src/api 模块说明（外部 API 接入与统一数据出口）
 
 `src/api` 是整个系统中的 **外部数据接入层 + 统一数据生产出口层**，

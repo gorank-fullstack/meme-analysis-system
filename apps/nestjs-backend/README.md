@@ -7,6 +7,49 @@
   <a href="./README.zh-CN.md">中文</a>
 </p>
 
+---
+
+<p align="left">
+  README Navigation
+</p>
+
+<p align="left">
+  <a href="../../README.md">root</a> &gt; apps &gt; <strong>nestjs-backend</strong>
+</p>
+
+<pre>
+nestjs-backend
+│
+├ <strong>README.md</strong>                         Backend architecture overview (NestJS layered design)
+│
+└ src
+   │
+   ├ api
+   │   └ <a href="./src/api/README.md">README.md</a>        Platform data fetching / Unified data structure
+   │
+   ├ redis
+   │   └ <a href="./src/redis/README.md">README.md</a>      Redis configuration / Caching strategy
+   │
+   ├ sort
+   │   └ <a href="./src/sort/README.md">README.md</a>       Token ranking algorithms / Hotness calculation
+   │
+   ├ task
+   │   └ <a href="./src/task/README.md">README.md</a>       Scheduled tasks / Multi-chain data fetching
+   │
+   └ utils
+       └ <a href="./src/utils/README.md">README.md</a>      Common utility functions (math / time / sorting)
+</pre>
+
+---
+
+Keywords: **Web3 · Data Aggregation · Token Ranking · NestJS Backend · API Service**
+
+This project is the backend service of a Web3 Token real-time analytics system.
+It is responsible for aggregating multi-source on-chain data, performing standardized processing and scoring calculations,
+and building high-performance ranking APIs based on Redis for consumption by a Next.js frontend.
+
+---
+
 <p align="left">
   <!-- Core -->
   <img src="https://img.shields.io/badge/NestJS-Backend-red?logo=nestjs" />
@@ -52,12 +95,6 @@ After completing the above steps, proceed to:
 
 <a id="intro"></a>
 ## Part 1: NestJS Project Introduction
-
-Keywords: **Monorepo · Full-stack · Web3 · Real-time Analysis · Token API**
-
-This project is the backend service of a Web3 Token real-time analytics system.
-It is responsible for aggregating multi-source on-chain data, performing standardized processing and scoring calculations,
-and building high-performance ranking APIs based on Redis for consumption by a Next.js frontend.
 
 ### Implemented Features
 
@@ -362,8 +399,6 @@ ensuring real-time accuracy and relevance.
 <a id="structure"></a>
 ## Part 6: Repository Structure
 
-### 1. Overview
-
 The project follows a layered architecture:
 
 **Data Fetching → Unified Processing → Sorting → API Output**
@@ -394,33 +429,6 @@ nestjs-backend/
 │  └─ main.ts
 │
 └─ package.json
-```
-
----
-
-### 2. Layered README Navigation
-
-Each module includes its own documentation (README files):
-
-```text
-nestjs-backend/
-├─ README.md              # Overall backend architecture (NestJS layering)
-│
-├─ src/
-│  ├─ api/                # Platform data fetching & unified processing
-│  │   └─ README.md
-│  │
-│  ├─ redis/              # Redis config & caching logic
-│  │   └─ README.md
-│  │
-│  ├─ sort/               # Token ranking algorithms
-│  │   └─ README.md
-│  │
-│  ├─ task/               # Scheduled tasks & data pipelines
-│  │   └─ README.md
-│  │
-│  └─ utils/              # Common utilities
-│      └─ README.md
 ```
 
 ---
@@ -792,8 +800,8 @@ pnpm run start:prod
 
 If you have questions, suggestions, or collaboration ideas:
 
-* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

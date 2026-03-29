@@ -7,6 +7,50 @@
   <strong>中文</strong>
 </p>
 
+---
+
+<p align="left">
+  README 导航
+</p>
+
+<p align="left">
+  <strong>root</strong>
+</p>
+
+<pre>
+root
+│
+├ <strong>README.zh-CN.md</strong>             项目入口
+│
+├ apps
+│   ├ nestjs-backend
+│   │   └ <a href="./apps/nestjs-backend/README.zh-CN.md">README.zh-CN.md</a>        Redis / 第三方 API / 后端 env / 编译和运行
+│   │
+│   └ nextjs-frontend
+│       └ <a href="./apps/nextjs-frontend/README.zh-CN.md">README.zh-CN.md</a>       前端 env / 编译和运行
+│
+└ interface
+    └ <a href="./interface/README.zh-CN.md">README.zh-CN.md</a>                     前后端共用数据结构
+</pre>
+
+---
+
+> 本项目包含：根 README、子项目 README（nestjs / nextjs / interface）及后端模块级 README。
+
+---
+
+<p align="left">
+  goRank
+</p>
+
+一个基于 NestJS + Next.js 构建的 Web3 Token 实时排名与评分系统
+
+- 多源数据聚合
+- 基于Redis的缓存
+- 系统要求：Node.js ≥ 18，Redis ≥ 5.0
+
+---  
+
 <p align="left">
   <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" />
   <img src="https://img.shields.io/badge/NestJS-Backend-red?logo=nestjs" />
@@ -17,14 +61,9 @@
   <img src="https://img.shields.io/badge/license-MIT-yellow" />
 </p>
 
----  
+---
 
 ## 第一部分：Monorepo 项目介绍
-
-goRank 是一个基于 NestJS + Next.js 构建的 Web3 Token 实时排名与评分系统
-
-> A real-time Web3 token ranking and scoring engine powered by multi-source data aggregation and Redis caching.
-> 运行环境：Node.js ≥ 18，Redis ≥ 5.0（详见后文运行要求）
 
 ### 项目信息
 
@@ -194,8 +233,6 @@ goRank 是一个基于 NestJS + Next.js 构建的 Web3 Token 实时排名与评�
 
 ## 第五部分：仓库结构
 
-### 一、仓库结构总览
-
 ```text
 apps/
 ├─ nestjs-backend/      # NestJS 后端服务
@@ -203,32 +240,6 @@ apps/
 interface/		# 前后端共享接口与常量
 
 ```
-
----
-
-### 二、分层 README 导航
-
-```text
-
-root
-│
-├ README.md                项目入口
-│
-├ apps
-│   ├ nestjs-backend
-│   │   └ README.md        Redis / 第三方 API / 后端 env / 编译和运行
-│   │
-│   └ nextjs-frontend
-│       └ README.md        前端 env / 编译和运行
-│
-└ interface
-    └ README.md            前后端共用数据结构
-
-```
-
----
-注：此项目包括：根readme文件，及：nestjs、nextjs、interface，三个子项目readme文件；
-其中：nestjs后端项目，几个关键模块还包括：readme文件。
 
 ---
 
@@ -317,8 +328,8 @@ Client network socket disconnected before secure TLS connection was established
 
 如果您有任何问题、建议或合作想法：
 
-* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---

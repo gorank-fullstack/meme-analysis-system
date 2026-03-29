@@ -7,6 +7,29 @@
   <strong>中文</strong>
 </p>
 
+---  
+
+<p align="left">
+  README 导航
+</p>
+
+<p align="left">
+  <a href="../../README.zh-CN.md">root</a> &gt; apps &gt; <strong>nextjs-frontend</strong>
+</p>
+
+---
+
+## **Web3 Token 实时行情分析平台 (Next.js + TypeScript)**
+
+技术栈：Next.js · React · TypeScript · Redux Toolkit · TailwindCSS · DaisyUI
+
+这是一个使用 **Next.js + TypeScript + Redux Toolkit** 构建的  
+**Web3 Token 实时数据分析前端系统**。
+
+该前端系统用于展示多链 Token 的实时交易数据、K线图与排行榜信息。
+
+---
+
 <p align="left">
   <!-- Core Framework -->
   <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" />
@@ -22,20 +45,9 @@
   <img src="https://img.shields.io/badge/TradingView-Chart-blue" />
 </p>
 
----  
-
-关键词：**Web3 Token 实时行情分析平台 (Next.js + TypeScript)**
-
-技术栈：Next.js · React · TypeScript · Redux Toolkit · TailwindCSS · DaisyUI
-
 ---
 
 ## 第一部分：Next.js 项目介绍
-
-这是一个基于 **Next.js + TypeScript + Redux Toolkit** 构建的  
-**Web3 Token 实时数据分析前端系统**。
-
-该前端系统用于展示多链 Token 的实时交易数据、K线图与排行榜信息。
 
 ### 已实现功能
 
@@ -313,8 +325,8 @@ apps\nextjs-frontend\src\components\Chart\TradingView\CandlestickChart.tsx
 
 如果您有任何问题、建议或合作想法：
 
-* GitHub: [https://github.com/gorank-fullstack](https://github.com/gorank-fullstack)
-* Telegram: [t.me/gorank_fullstack](t.me/gorank_fullstack)
+* GitHub: [github.com/yu-moxing](https://github.com/yu-moxing)
+* Telegram: [t.me/yu_moxing](https://t.me/yu_moxing)
 * Email: [gorank1024@gmail.com](mailto:gorank1024@gmail.com)
 
 ---
